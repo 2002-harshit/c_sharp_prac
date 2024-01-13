@@ -1,0 +1,15 @@
+/home/harshit/Office/bank_proj/bin/Debug/net8.0/bank_proj
+/home/harshit/Office/bank_proj/bin/Debug/net8.0/bank_proj.deps.json
+/home/harshit/Office/bank_proj/bin/Debug/net8.0/bank_proj.runtimeconfig.json
+/home/harshit/Office/bank_proj/bin/Debug/net8.0/bank_proj.dll
+/home/harshit/Office/bank_proj/bin/Debug/net8.0/bank_proj.pdb
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/bank_proj.GeneratedMSBuildEditorConfig.editorconfig
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/bank_proj.AssemblyInfoInputs.cache
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/bank_proj.AssemblyInfo.cs
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/bank_proj.csproj.CoreCompileInputs.cache
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/bank_proj.sourcelink.json
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/bank_proj.dll
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/refint/bank_proj.dll
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/bank_proj.pdb
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/bank_proj.genruntimeconfig.cache
+/home/harshit/Office/bank_proj/obj/Debug/net8.0/ref/bank_proj.dll
