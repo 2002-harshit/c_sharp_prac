@@ -1,0 +1,41 @@
+@model bank_proj_db_mvc.Models.Sbaccount
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Account Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Accountnumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Accountnumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Customername)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Customername)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Customeraddress)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Customeraddress)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Currentbalance)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Currentbalance)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.Accountnumber  }) |
+    <a asp-action="Index">Back to list</a>
+</div>

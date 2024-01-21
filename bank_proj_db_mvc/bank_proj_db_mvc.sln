@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bank_proj_db_mvc", "bank_proj_db_mvc.csproj", "{D78A090E-61A2-4318-A999-B9B11C66416D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D78A090E-61A2-4318-A999-B9B11C66416D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78A090E-61A2-4318-A999-B9B11C66416D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78A090E-61A2-4318-A999-B9B11C66416D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78A090E-61A2-4318-A999-B9B11C66416D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

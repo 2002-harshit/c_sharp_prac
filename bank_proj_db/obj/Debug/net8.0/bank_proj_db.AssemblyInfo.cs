@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bank_proj_db")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8421a06bcb667b65b1a077d401fb22fb0932782a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11e4d8e4b13704571f491d22c621f1c350a0dd2a")]
 [assembly: System.Reflection.AssemblyProductAttribute("bank_proj_db")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bank_proj_db")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

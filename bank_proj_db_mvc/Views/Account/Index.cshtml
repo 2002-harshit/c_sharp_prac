@@ -1,0 +1,57 @@
+@model IEnumerable<bank_proj_db_mvc.Models.Sbaccount>
+
+@{
+    ViewData["Title"] = "Index";
+    
+    if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    
+    if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+}
+
+
+
+<h1>All Accounts</h1>
+
+<p>
+    <a asp-action="Create">Create a New Account</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Accountnumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Customername)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Accountnumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Customername)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new {  id=item.Accountnumber }) |
+                @Html.ActionLink("Details", "Details", new { id=item.Accountnumber  }) |
+                @Html.ActionLink("Delete", "Delete", new {  id=item.Accountnumber })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
