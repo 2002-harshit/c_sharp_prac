@@ -1,0 +1,89 @@
+-CREATE TABLE Flights (
+--    FlightId SERIAL PRIMARY KEY,
+--    Name VARCHAR(255) NOT NULL,
+--    Source VARCHAR(255) NOT NULL,
+--    Destination VARCHAR(255) NOT NULL,
+--    DepartureTime TIMESTAMP NOT NULL,
+--    ArrivalTime TIMESTAMP NOT NULL,
+--    Rate DECIMAL(10, 2) NOT NULL,
+--    Capacity INT NOT NULL,
+--    Status VARCHAR(50) NOT NULL
+--);
+--
+--ALTER TABLE Flights ADD COLUMN CurrentlyBookedSeats INT DEFAULT 0;
+--alter table flights add column Code varchar(20) not null;
+
+--alter table customers add column password varchar(255) not null;
+
+
+
+--CREATE TABLE Customers (
+--    CustomerId SERIAL PRIMARY KEY,
+--    Name VARCHAR(255) NOT NULL,
+--    Email VARCHAR(255) UNIQUE NOT NULL,
+--    Phone VARCHAR(20) UNIQUE NOT NULL,
+--    Address TEXT NOT NULL
+--);
+--
+--CREATE TABLE BookingDetails (
+--    BookingId SERIAL PRIMARY KEY,
+--    FlightId INT NOT NULL,
+--    CustomerId INT NOT NULL,
+--    BookingDate TIMESTAMP NOT NULL,
+--    NoOfPassengers INT NOT NULL,
+--    TotalCost DECIMAL(10, 2) NOT NULL,
+--    Status VARCHAR(50) NOT NULL,
+--    SeatNumbers VARCHAR(255), -- List of seat numbers as a comma-separated string
+--    FOREIGN KEY (FlightId) REFERENCES Flights (FlightId),
+--    FOREIGN KEY (CustomerId) REFERENCES Customers (CustomerId)
+--);
+
+select * from flights f ;
+
+INSERT INTO BookingDetails (FlightId, CustomerId, BookingDate, NoOfPassengers, TotalCost, Status, SeatNumbers)
+VALUES (1, 5, '2024-01-22 10:30:00', 2, 10000, 'Confirmed', '1,2');
+
+--update flights set currentlybookedseats = 2 where flightid =1;
+
+
+
+
+--INSERT INTO Flights 
+--(name, source, destination, departuretime, arrivaltime, rate, capacity, status, code) 
+--VALUES 
+--('Air India', 'New Delhi', 'Mumbai', '2024-02-15 08:00:00', '2024-02-15 10:00:00', 5000, 150, 'Scheduled', 'AI101');
+--
+
+--INSERT INTO Flights 
+--(name, source, destination, departuretime, arrivaltime, rate, capacity, status, code) 
+--VALUES 
+--('SpiceJet', 'Bangalore', 'Kolkata', '2024-02-16 09:30:00', '2024-02-16 11:45:00', 4500, 130, 'Scheduled', 'SJ456');
+--
+--INSERT INTO Flights 
+--(name, source, destination, departuretime, arrivaltime, rate, capacity, status, code) 
+--VALUES 
+--('IndiGo', 'Chennai', 'Goa', '2024-02-17 07:15:00', '2024-02-17 09:00:00', 3500, 120, 'Scheduled', 'IG789');
+
+select * from customers c ;
+--
+--INSERT INTO Customers (name, email, phone, address,password) 
+--VALUES 
+--('John Doe', 'john@example.com', '+1234567890', '123 Main Street, Chicago','pass123');
+--
+--INSERT INTO Customers (name, email, phone, address,password) 
+--VALUES 
+--('Jane Smith', 'jane@example.com', '+9876543210', '456 Elm Avenue, Chennai','aurBhai');
+--
+--INSERT INTO Customers (name, email, phone, address,password) 
+--VALUES 
+--('Alice Johnson', 'alice@example.com', '+1112223333', '789 Oak Road, LA','hanbhai');
+
+ALTER TABLE flights 
+ADD CONSTRAINT Unique_code UNIQUE (code);
+
+
+
+
+
+
+
